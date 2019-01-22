@@ -1,0 +1,7 @@
+length = 1 -> 20543 ns
+length = 2 -> 7506 ns
+length = 3 -> 78223 ns
+length = 4 -> 181333 ns
+length = 5 -> прекалено много време го чаках, а ми се спеше :D
+
+2214945 hash/sec
