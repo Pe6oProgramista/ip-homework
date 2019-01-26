@@ -20,6 +20,7 @@ public class Controller {
 	public Response greenZone(@PathParam("car_reg") String car_reg) throws Exception{
 		System.out.println("yes green");
 		if(!car_reg.matches("[ETYOPAHKXCBM]{2}\\d{4}[ETYOPAHKXCBM]{2}")) {
+			System.out.println("Not match with regex");
 			return Response.status(400).build();
 		}
 
@@ -39,6 +40,7 @@ public class Controller {
 	public Response blueZone(@PathParam("car_reg") String car_reg) throws Exception{
 		System.out.println("yes blue");
 		if(!car_reg.matches("[ETYOPAHKXCBM]{2}\\d{4}[ETYOPAHKXCBM]{2}")) {
+			System.out.println("Not match with regex");
 			return Response.status(400).build();
 		}
 		CarReg car;
